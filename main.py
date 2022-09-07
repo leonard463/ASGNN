@@ -13,7 +13,7 @@ gpu_config.gpu_options.allow_growth=True
 os.environ['KMP_WARNINGS'] = 'off'
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='foursquare', help='dataset name')
+parser.add_argument('--dataset', default='gowalla', help='dataset name')
 parser.add_argument('--method', type=str, default='ggnn', help='ggnn/gat/gcn')
 parser.add_argument('--validation', action='store_true', help='validation')
 parser.add_argument('--epoch', type=int, default=30, help='number of epochs to train for')
